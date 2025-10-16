@@ -1,66 +1,459 @@
-<!DOCTYPE html> <!-- Declaración del tipo de documento: HTML5 -->
-<html lang="es"> <!-- Idioma principal del documento: español -->
-	<head>
-		<meta charset="UTF-8" /> <!-- Codificación de caracteres: UTF-8 para soportar caracteres especiales -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Hace el sitio responsive en dispositivos móviles -->
-		<title>My Web Project - WEB ATELIER (UDIT)</title> <!-- Título que aparece en la pestaña del navegador -->
-		<meta name="description" content="A student web project for WEB ATELIER (UDIT) course" /> <!-- Descripción para SEO -->
-		<link rel="stylesheet" href="./assets/css/style.css" /> <!-- Enlace a la hoja de estilos principal -->
-		<!-- Sugerencia: Puedes añadir favicon y fuentes externas aquí para mejorar la apariencia -->
-	</head>
-	<body>
-		<a href="#main" class="skip-link">Skip to main content</a> <!-- Enlace de accesibilidad para saltar al contenido principal -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design Resources — Mariana Gonzalez-Moro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=gyst@400,500,700&f[]=clash-display@400,500,700&display=swap"
+    />
+  </head>
 
-		<header>
-			<div class="container">
-				<h1>My Web PROYECTOOOOOOOOOOO</h1> <!-- Título principal de la página -->
-				<p>Student Project - WEB ATELIER (UDIT)</p> <!-- Subtítulo o descripción breve -->
-			</div>
-			<!-- Sugerencia: Puedes agregar un menú de navegación aquí -->
-		</header>
+  <body>
+    <div class="resources-hero">
+      <!-- ===== HEADER ===== -->
+      <header class="resources-header">
+        <h1>WEB DESIGN RESOURCES</h1>
+        <p>by Mariana González-Moro</p>
+      </header>
 
-		<main id="main" class="container">
-			<section>
-				<h2>Welcome</h2> <!-- Encabezado de sección -->
-				<p>
-					This is the starting point for my web project. I will build this incrementally, committing progress after each
-					class.
-				</p>
+      <!-- ===== NAVIGATION ===== -->
+      <nav class="resources-nav">
+        <ul>
+          <li><a href="#css-frameworks">CSS Frameworks</a></li>
+          <li><a href="#js-frameworks">JavaScript Frameworks</a></li>
+          <li><a href="#static-generators">Static Site Generators</a></li>
+          <li><a href="#animation-libraries">Animation Libraries</a></li>
+          <li><a href="#templates">Templates & UI Kits</a></li>
+          <li><a href="#data-tools">Data & Media Tools</a></li>
+          <li><a href="#reflection">Reflection</a></li>
+        </ul>
+      </nav>
+    </div>
 
-				<h3>Project Goals</h3> <!-- Subtítulo para los objetivos del proyecto -->
-				<ul>
-					<li>Create a responsive, accessible website</li> <!-- Objetivo: Responsividad y accesibilidad -->
-					<li>Practice semantic HTML</li> <!-- Objetivo: Usar etiquetas semánticas -->
-					<li>Implement modern CSS techniques</li> <!-- Objetivo: CSS moderno -->
-					<li>Follow web accessibility guidelines</li> <!-- Objetivo: Accesibilidad -->
-				</ul>
-				<!-- Sugerencia: Puedes añadir más objetivos o detalles sobre el proyecto -->
-			</section>
+    <main class="container">
+      <!-- ===== CSS FRAMEWORKS ===== -->
+      <section id="css-frameworks" class="tools-section">
+        <h2>CSS Frameworks</h2>
 
-			<section>
-				<h2>Weekly Progress</h2>
-				<p>
-					Check my
-					<a href="https://github.com/[username]/[project-repo]/commits/main">commit history</a>
-					to see weekly progress.
-				</p>
-				<!-- Sugerencia: Puedes mostrar una lista de avances semanales aquí -->
-			</section>
-		</main>
+        <div class="tools-grid">
+          <!-- Bootstrap -->
+          <article class="tool-card">
+            <h3>
+              <a href="https://getbootstrap.com/" target="_blank">BOOTSTRAP</a>
+            </h3>
+            <span class="runtime-badge standalone">🌐 No Node.js</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Responsive grid, utilities,
+                prebuilt components.
+              </p>
+              <p><strong>Technology:</strong> CSS, vanilla JS.</p>
+              <p><strong>Learning curve:</strong> Beginner → Intermediate.</p>
+              <p>
+                <strong>Use cases:</strong> Quick prototypes, educational
+                projects.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                Bootstrap feels simple to use and great for quick layouts
+                without extra setup.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/bootstrap.png" alt="Bootstrap" />
+            </div>
+          </article>
 
-		<footer>
-			<div class="container">
-				<p>© 2025 [Your Name] — WEB ATELIER (UDIT) · Web Design (2025 Fall).</p> <!-- Pie de página con créditos -->
-				<p>
-					<a href="https://github.com/ruvebal/web-atelier-udit">Course Framework</a>
-					·
-					<a href="project-brief.md">Project Brief</a>
-				</p>
-				<!-- Sugerencia: Puedes agregar enlaces a redes sociales o contacto aquí -->
-			</div>
-		</footer>
+          <!-- TailwindCSS -->
+          <article class="tool-card">
+            <h3>
+              <a href="https://tailwindcss.com/" target="_blank">TAILWINDCSS</a>
+            </h3>
+            <span class="runtime-badge nodejs">📦 Requires Node.js</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Utility-first CSS, JIT compiler.
+              </p>
+              <p><strong>Technology:</strong> PostCSS, JavaScript bundlers.</p>
+              <p><strong>Learning curve:</strong> Intermediate.</p>
+              <p>
+                <strong>Use cases:</strong> Custom design systems, scalable UIs.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                I like how Tailwind lets me build modern layouts with full
+                design control.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/tailwind.png" alt="TailwindCSS" />
+            </div>
+          </article>
+        </div>
+      </section>
 
-		<script src="./assets/js/main.js"></script> <!-- Enlace al archivo JavaScript principal -->
-		<!-- Sugerencia: Añade scripts adicionales al final para mejorar el rendimiento -->
-	</body>
+      <!-- ===== JS FRAMEWORKS ===== -->
+      <section id="js-frameworks" class="tools-section">
+        <h2>JavaScript Frameworks</h2>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <h3><a href="https://react.dev/" target="_blank">REACT</a></h3>
+            <span class="runtime-badge nodejs">📦 Requires Node.js</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Component-based, virtual DOM.
+              </p>
+              <p><strong>Technology:</strong> JavaScript, JSX.</p>
+              <p><strong>Learning curve:</strong> Intermediate → Advanced.</p>
+              <p>
+                <strong>Use cases:</strong> Web apps, dashboards, interactive
+                UIs.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                React is great for dynamic interfaces but requires setup and
+                understanding of components.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/react.png" alt="React" />
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://vuejs.org/" target="_blank">VUE.JS</a></h3>
+            <span class="runtime-badge nodejs">📦 Requires Node.js</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Reactive data binding, component
+                system.
+              </p>
+              <p><strong>Technology:</strong> JavaScript, Node.js.</p>
+              <p><strong>Learning curve:</strong> Intermediate.</p>
+              <p>
+                <strong>Use cases:</strong> Progressive web apps, portfolios.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                Vue’s syntax is cleaner than React for smaller projects; ideal
+                for learning JS frameworks.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/vuejs.png" alt="Vue.js" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== STATIC SITE GENERATORS ===== -->
+      <section id="static-generators" class="tools-section">
+        <h2>Static Site Generators</h2>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <h3><a href="https://jekyllrb.com/" target="_blank">JEKYLL</a></h3>
+            <span class="runtime-badge standalone">🟥 Requires Ruby</span>
+            <div class="tool-info">
+              <p><strong>Key features:</strong> Markdown + Liquid templates.</p>
+              <p><strong>Technology:</strong> Ruby, YAML.</p>
+              <p><strong>Learning curve:</strong> Beginner → Intermediate.</p>
+              <p><strong>Use cases:</strong> Blogs, portfolios.</p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                Jekyll integrates perfectly with GitHub Pages, making it ideal
+                for hosting simple static sites.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/jekyll.png" alt="Jekyll" />
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://gohugo.io/" target="_blank">HUGO</a></h3>
+            <span class="runtime-badge standalone">🟢 Standalone Binary</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Fast build times, markdown
+                content.
+              </p>
+              <p><strong>Technology:</strong> Go (compiled binary).</p>
+              <p><strong>Learning curve:</strong> Intermediate.</p>
+              <p>
+                <strong>Use cases:</strong> Large documentation sites, blogs.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                Hugo’s performance is impressive; great for static blogs without
+                heavy setup.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/hugo.png" alt="Hugo" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== ANIMATION LIBRARIES ===== -->
+      <section id="animation-libraries" class="tools-section">
+        <h2>Animation Libraries</h2>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <h3>
+              <a href="https://greensock.com/gsap/" target="_blank">GSAP</a>
+            </h3>
+            <span class="runtime-badge standalone">🌐 No Node.js</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Smooth animations, scroll
+                triggers.
+              </p>
+              <p><strong>Technology:</strong> Vanilla JavaScript.</p>
+              <p><strong>Learning curve:</strong> Intermediate → Advanced.</p>
+              <p>
+                <strong>Use cases:</strong> Interactive websites, motion design.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                GSAP offers professional-grade animation control, perfect for
+                portfolio effects.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/gsap.png" alt="GSAP" />
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://animejs.com/" target="_blank">ANIME.JS</a></h3>
+            <span class="runtime-badge standalone">🌐 No Node.js</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Lightweight animation engine for
+                DOM, SVG, and CSS.
+              </p>
+              <p><strong>Technology:</strong> Vanilla JavaScript.</p>
+              <p><strong>Learning curve:</strong> Beginner → Intermediate.</p>
+              <p>
+                <strong>Use cases:</strong> Illustrations, animated icons,
+                lightweight effects.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                Anime.js is a fun and easy way to add dynamic motion without
+                heavy setup or frameworks.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/animejs.png" alt="Anime.js" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== TEMPLATE KITS ===== -->
+      <section id="templates" class="tools-section">
+        <h2>Templates & UI Kits</h2>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <h3><a href="https://html5up.net/" target="_blank">HTML5 UP</a></h3>
+            <span class="runtime-badge standalone">🌐 No Node.js</span>
+            <div class="tool-info">
+              <p><strong>Key features:</strong> Free responsive templates.</p>
+              <p><strong>Technology:</strong> HTML5, CSS3.</p>
+              <p><strong>Learning curve:</strong> Beginner.</p>
+              <p>
+                <strong>Use cases:</strong> Student projects, small business
+                sites.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                HTML5 UP templates are a great way to study clean, semantic HTML
+                and CSS layouts.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/html5up.png" alt="HTML5 UP" />
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <h3>
+              <a href="https://flowbite.com/" target="_blank">FLOWBITE</a>
+            </h3>
+            <span class="runtime-badge nodejs">📦 Requires Node.js</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> TailwindCSS-based component
+                library.
+              </p>
+              <p><strong>Technology:</strong> TailwindCSS, JavaScript.</p>
+              <p><strong>Learning curve:</strong> Intermediate.</p>
+              <p>
+                <strong>Use cases:</strong> Rapid prototyping with Tailwind UI
+                components.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                Flowbite saves time when designing modern interfaces using
+                Tailwind classes.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/flowbite.png" alt="Flowbite" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== DATA & MEDIA TOOLS ===== -->
+      <section id="data-tools" class="tools-section">
+        <h2>Data & Media Tools</h2>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <h3>
+              <a href="https://imagekit.io/" target="_blank">IMAGEKIT.IO</a>
+            </h3>
+            <span class="runtime-badge saas">☁ SaaS</span>
+            <div class="tool-info">
+              <p><strong>Key features:</strong> Image CDN and optimization.</p>
+              <p><strong>Technology:</strong> Cloud-based API.</p>
+              <p><strong>Learning curve:</strong> Beginner.</p>
+              <p>
+                <strong>Use cases:</strong> Optimized media delivery for web
+                projects.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                ImageKit simplifies media performance, very useful for portfolio
+                and e-commerce sites.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/imagekitio.png" alt="ImageKit" />
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://hygraph.com/" target="_blank">HYGRAPH</a></h3>
+            <span class="runtime-badge saas">☁ SaaS</span>
+            <div class="tool-info">
+              <p>
+                <strong>Key features:</strong> Headless CMS with GraphQL API.
+              </p>
+              <p><strong>Technology:</strong> SaaS, GraphQL backend.</p>
+              <p><strong>Learning curve:</strong> Intermediate.</p>
+              <p>
+                <strong>Use cases:</strong> Managing and delivering structured
+                content for modern web apps.
+              </p>
+            </div>
+            <div class="personal-notes">
+              <h4>Personal Notes</h4>
+              <p>
+                Hygraph is powerful for dynamic sites; I’d use it to manage blog
+                content easily via API.
+              </p>
+            </div>
+            <div class="tool-card-image">
+              <img src="imagery/hygraph.png" alt="Hygraph" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== REFLECTION ===== -->
+      <div class="reflection-footer-bg">
+        <section id="reflection" class="tools-section">
+          <h2>Critical Reflection</h2>
+          <p>
+            Exploring these classic and modern web design tools has shown me how
+            the landscape of front-end creation has become both more accessible
+            and more complex. Each tool I researched offers a different
+            philosophy: some aim for total creative control through frameworks
+            and build tools, while others prioritize simplicity and instant
+            visual results. Working through this comparison helped me understand
+            that choosing a tool is as much about
+            <strong>personal workflow and aesthetics</strong> as it is about
+            technical capability.
+          </p>
+
+          <p>
+            I tend to favor clean, minimalist visuals with strong contrasts,
+            <strong>white, black, and red</strong> are usually my go-to palette.
+            Because of that, I value tools that let me control design details
+            precisely without unnecessary layers of abstraction.
+            <strong>TailwindCSS</strong> and <strong>React</strong> reflect that
+            approach: they demand more setup but give me the flexibility to
+            express design identity through structure and motion. For instance,
+            combining React’s component logic with <strong>Anime.js</strong> or
+            <strong>GSAP</strong> allows subtle, techno-style transitions that
+            match my preferred aesthetic.
+          </p>
+
+          <p>
+            On the other hand, <strong>standalone and SaaS tools</strong> like
+            Bootstrap, HTML5 UP, and ImageKit.io fit perfectly when I want to
+            move fast and focus purely on layout and presentation. These are
+            ideal for smaller projects or concept mockups where visual polish
+            matters more than scalability. Their immediacy keeps the creative
+            flow uninterrupted, a key part of my personal design process.
+          </p>
+
+          <p>
+            Through the ATELIER methodology, I’ve learned to
+            <em>observe</em> how dependencies shape the development process,
+            <em>intervene</em> by organizing resources clearly,
+            <em>reflect</em> on how each choice influences creativity, and
+            finally <em>share</em> insights that can help others navigate
+            similar decisions. This structure made me more intentional about my
+            tool selection, thinking not only about “what works,” but also “what
+            inspires.”
+          </p>
+
+          <p>
+            Going forward, I see myself combining both worlds: using
+            Node.js-based frameworks like TailwindCSS and React for structured,
+            long-term projects, and simpler resources like HTML5 UP or Flowbite
+            for prototypes and fast builds. This balance between
+            <strong>speed and flexibility</strong> mirrors my creative approach:
+            functional, clean, and bold, just like the contrast between black,
+            white, and red in my visual work.
+          </p>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="resources-footer">
+          <p>© 2025 Mariana González-Moro — Web Foundations (UDIT)</p>
+        </footer>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
